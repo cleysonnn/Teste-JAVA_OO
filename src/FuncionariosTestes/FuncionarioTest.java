@@ -55,7 +55,7 @@ class FuncionarioTest {
 	}
 
 	@Test
-	void Teste() {
+	void valorTotalPagoTeste() {
 
 		
 		Double ValorTotalPago =  service.getValorTotalPago(FuncionariosList, 12, 2021);
@@ -65,7 +65,7 @@ class FuncionarioTest {
 	
 	
 	@Test
-	void teste2() {
+	void valorTotalPagoDeSalarioTeste() {
 		
 		
 		Double ValorTotalPago =  service.getValorTotalPagoDeSalario(FuncionariosList, 12, 2021);
@@ -75,7 +75,7 @@ class FuncionarioTest {
 	
 	
 	@Test
-	void teste3() {
+	void valorPagoBeneficioTeste() {
 	
 		
 		
@@ -85,7 +85,7 @@ class FuncionarioTest {
 	}
 	
 	@Test
-	void teste4() {
+	void valorMaiorSalarioTeste() {
 		
 	
 		Double ValorTotalPago =  service.getValorMaiorSalario(FuncionariosList, 12, 2021);
@@ -94,7 +94,7 @@ class FuncionarioTest {
 	}
 	
 	@Test
-	void teste5() {
+	void nomeMaiorBeneficioTeste() {
 		
 		
 		
@@ -105,7 +105,7 @@ class FuncionarioTest {
 	}
 	
 	@Test
-	void teste6() throws VendaInexitenteException {
+	void vendedorMaiorVendaMesTeste() throws VendaInexitenteException {
 		
 		Vendedor vendedor = new Vendedor(2000.00); 
 		
@@ -123,8 +123,8 @@ class FuncionarioTest {
 		vendasList2.add(venda3);
 		vendasList2.add(venda4);
 		
-		Funcionario funcionario3 = new Funcionario("Ana Silva", vendedor, 12, 2020, vendasList); // 2000 + 1800  = 3800
-		Funcionario funcionario4 = new Funcionario("cleyson", vendedor, 12, 2020, vendasList2); // 2000 + 1800  = 3800
+		Funcionario funcionario3 = new Funcionario("Ana Silva", vendedor, 12, 2020, vendasList); //5200
+		Funcionario funcionario4 = new Funcionario("cleyson", vendedor, 12, 2020, vendasList2); //5300
 
 		
 		List<Funcionario> FuncionariosList = new ArrayList<Funcionario>();
@@ -140,7 +140,7 @@ class FuncionarioTest {
 	}
 	
 	@Test
-	void teste7() throws VendaInexitenteException {
+	void vendedorMaiorVendaMesExceptionTeste() throws VendaInexitenteException {
 		
 
 		Vendedor vendedor = new Vendedor(2000.00); 
@@ -160,8 +160,8 @@ class FuncionarioTest {
 		vendasList2.add(venda3);
 		vendasList2.add(venda4);
 		
-		Funcionario funcionario3 = new Funcionario("Ana Silva", vendedor, 12, 2020, vendasList); // 2000 + 1800  = 3800
-		Funcionario funcionario4 = new Funcionario("cleyson", vendedor, 12, 2020, vendasList2); // 2000 + 1800  = 3800
+		Funcionario funcionario3 = new Funcionario("Ana Silva", vendedor, 12, 2020, vendasList); 
+		Funcionario funcionario4 = new Funcionario("cleyson", vendedor, 12, 2020, vendasList2); 
 
 		
 		List<Funcionario> FuncionariosList = new ArrayList<Funcionario>();
